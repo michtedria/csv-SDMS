@@ -1,4 +1,4 @@
-interface SDMSFunctions {
+interface SDMSInterface {
     fun addStudent()
     fun editStudent()
     fun deleteStudent()

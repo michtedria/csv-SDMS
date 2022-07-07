@@ -1,6 +1,6 @@
 import kotlin.system.exitProcess
 
-class StudentFunctions : SDMSFunctions {
+class StudentFunctions : SDMSInterface {
 
     var studentList = mutableListOf(
         StudentDetails("ID123", "Tony Stark", 22, "Male"),
@@ -23,7 +23,6 @@ class StudentFunctions : SDMSFunctions {
         val idNew = store.id + 1
 
         val addNew = StudentDetails(id = idNew, name = "$nameNew", age = ageNew, gender = "$genderNew")
-  //      studentList.add(index = studentList.size, addNew)
         studentList.add(index = size, addNew)
         println("Student $nameNew has been add to the list")
         println("Would you like to go back to the main option?: Y/N")
